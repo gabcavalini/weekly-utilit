@@ -1,4 +1,4 @@
-const CU_TOKEN = "pk_99903739_YHD60HEDVI349Z1TJLA9OF6V93UP8SPF";
+const CU_TOKEN = process.env.CLICKUP_API_KEY;
 const CU_LIST  = "2ky44qvf-3713";
 
 exports.handler = async function(event, context) {
