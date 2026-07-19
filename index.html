@@ -626,6 +626,7 @@ function filterT(p,el){
   if(el&&el.classList.contains("fb"))el.classList.add("active");
   document.querySelectorAll(".mc").forEach(c=>c.classList.remove("sel"));
   if(el&&el.classList.contains("mc"))el.classList.add("sel");
+}
   
 // ═══════════════════════════════════════
 // CLICKUP INTEGRATION
@@ -804,7 +805,6 @@ syncClickUp();
 setInterval(syncClickUp, 5 * 60 * 1000);
 
 renderT();
-}
 function filterS(s,el){
   cf.s=cf.s===s?"todos":s;
   document.querySelectorAll(".tfilt .fb").forEach(b=>{if(["Para fazer","Revisão","Aprovação","Alteração"].includes(b.textContent.trim()))b.classList.remove("active");});
